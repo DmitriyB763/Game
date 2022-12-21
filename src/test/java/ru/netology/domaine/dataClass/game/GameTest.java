@@ -14,10 +14,10 @@ class GameTest {
 
     static Game game = new Game();
 
-    static Player player = new Player(1, "tor", 7);
+    static Player player = new Player(1, "tor", 12);
     static Player player1 = new Player(2, "im", 6);
-    static Player player2 = new Player(3, "halk", 10);
-    Player player3 = new Player(4, "spider", 7);
+    static Player player2 = new Player(3, "halk", 12);
+    Player player3 = new Player(4, "spider", 9);
 
     @BeforeAll
     public static void setUp() {
@@ -53,72 +53,74 @@ class GameTest {
     public void shouldNotFindById() {//поиск по не существующему id
 
 
-
-
-        assertThrows(NotRegisteredException.class, () -> {game.findById(1000);});
+        assertThrows(NotRegisteredException.class, () -> {
+            game.findById(1000);
+        });
     }
 
     @Test
-    public void shouldRoundWhenFirstPlayerStronger(){
-
-
-        int expected = 1;
-        int actual = game.round(1,2);
-
-        assertEquals(expected,actual);
+    public void shouldRoundWhenFirstPlayerStronger() {
+        assertEquals(1, game.round(1, 2));
     }
 
     @Test
-    public void shouldRoundWhenSecondPlayerStronger(){
-
+    public void shouldRoundWhenSecondPlayerStronger() {
 
         int expected = 2;
-        int actual = game.round(2,3);
+        int actual = game.round(2, 3);
 
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void shouldRoundWhenStrengthEquals(){
-        game.register(player3);
+    public void shouldRoundWhenStrengthEquals() {
+
 
         int expected = 0;
-        int actual = game.round(1,4);
+        int actual = game.round(1, 3);
 
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     //негативные тесты
     @Test
-    public void shouldRoundWhenStrengthEqualsAndPlayer2NotRegistered(){
+    public void shouldRoundWhenStrengthEqualsAndPlayer2NotRegistered() {
 
-
-        assertThrows(NotRegisteredException.class, () -> {game.round(1,4);});
+        assertThrows(NotRegisteredException.class, () -> {
+            game.round(1, 4);
+        });
     }
 
     @Test
-    public void shouldRoundWhenPlayer1NotRegistered(){
+    public void shouldRoundWhenPlayer1NotRegistered() {
 
-
-        assertThrows(NotRegisteredException.class, () -> {game.round(4,3);});
+        assertThrows(NotRegisteredException.class, () -> {
+            game.round(4, 3);
+        });
     }
 
     @Test
-    public void shouldRoundWhenPlayersNotRegistered(){
-Game game = new Game();
+    public void shouldRoundWhenPlayersNotRegistered() {
 
 
-        assertThrows(NotRegisteredException.class, () -> {game.round(4,2);});
+
+        assertThrows(NotRegisteredException.class, () -> {
+            game.round(4, 5);
+        });
     }
 
     @Test
-    public  void shouldRoundWhenIdEquals() {
+    public void shouldRoundWhenIdEquals() {
 
-        assertEquals(0,game.round(1,1));
+        assertEquals(0, game.round(1, 1));
     }
-    @Test
-    public  void shouldRoundWhenNotPlayers() {
 
-        assertEquals(null,game.round(,));
+    @Test
+    public void shouldRoundWhenNotPlayers() {
+
+        assertThrows(NotRegisteredException.class, () -> {
+            game.round(null, null);
+        });
+    }
 }
 

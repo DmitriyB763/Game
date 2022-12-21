@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d098e9-32ac-4d26-a299-23f933d057e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/dataClass/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/dataClass/exception/NotRegisteredException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/dataClass/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/domaine/dataClass/game/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/dataClass/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domaine/dataClass/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/domaine/dataClass/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/domaine/dataClass/game/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
       <recent name="ru.netology.domaine.dataClass.game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.shouldRoundWhenIdEquals">
+  <component name="RunManager" selected="JUnit.GameTest.shouldRoundWhenNotPlayers">
     <configuration name="GameTest.shouldRoundWhenIdEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Game" />
       <extension name="coverage">
@@ -73,6 +67,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.shouldRoundWhenNotPlayers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.domaine.dataClass.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.domaine.dataClass.game" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.dataClass.game.GameTest" />
+      <option name="METHOD_NAME" value="shouldRoundWhenNotPlayers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.shouldRoundWhenPlayersNotRegistered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.domaine.dataClass.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.domaine.dataClass.game" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.dataClass.game.GameTest" />
+      <option name="METHOD_NAME" value="shouldRoundWhenPlayersNotRegistered" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.shouldRoundWhenStrengthEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Game" />
       <extension name="coverage">
@@ -84,38 +110,6 @@
       <option name="PACKAGE_NAME" value="ru.netology.domaine.dataClass.game" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.dataClass.game.GameTest" />
       <option name="METHOD_NAME" value="shouldRoundWhenStrengthEquals" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.shouldRoundWhenStrengthEqualsAndPlayer1NotRegistered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.domaine.dataClass.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.domaine.dataClass.game" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.dataClass.game.GameTest" />
-      <option name="METHOD_NAME" value="shouldRoundWhenStrengthEqualsAndPlayer1NotRegistered" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.shouldRoundWhenStrengthEqualsAndPlayer2NotRegistered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.domaine.dataClass.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.domaine.dataClass.game" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.domaine.dataClass.game.GameTest" />
-      <option name="METHOD_NAME" value="shouldRoundWhenStrengthEqualsAndPlayer2NotRegistered" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.shouldRoundWhenNotPlayers" />
+        <item itemvalue="JUnit.GameTest.shouldRoundWhenPlayersNotRegistered" />
+        <item itemvalue="JUnit.GameTest.shouldRoundWhenStrengthEquals" />
         <item itemvalue="JUnit.GameTest.shouldRoundWhenIdEquals" />
         <item itemvalue="JUnit.GameTest.shouldRoundWhenStrengthEqualsAndPlayersNotRegistered" />
-        <item itemvalue="JUnit.GameTest.shouldRoundWhenStrengthEqualsAndPlayer1NotRegistered" />
-        <item itemvalue="JUnit.GameTest.shouldRoundWhenStrengthEqualsAndPlayer2NotRegistered" />
-        <item itemvalue="JUnit.GameTest.shouldRoundWhenStrengthEquals" />
       </list>
     </recent_temporary>
   </component>

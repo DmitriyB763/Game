@@ -25,16 +25,21 @@ public class Game {
         this.players.add(player);
     }
 
-    public Player findById(int id) { // поиск по имени для получения всей остальной  информации  об игроке
-        for (Player player : players) {
-            if (player.getId() == id) {
-                return player;
-            }
-        }
-        throw new NotRegisteredException("Игрок с ID " + id + " не зарегистрирован !");
-    }
+    public Player findById(Integer id) { // поиск по имени для получения всей остальной  информации  об игроке
+       if (id == null){
+           throw new NotRegisteredException("Игрок не пришёл !");
+       }
+           for (Player player : players) {
+               if (player.getId() == id) {
+                   return player;
+               }
+           }
+           throw new NotRegisteredException("Игрок с ID " + id + " не зарегистрирован !");
+       }
 
-    public int round(int playerId1, int playerId2) {
+
+
+    public int round(Integer playerId1, Integer playerId2) {
         Player gamePlayer1 = findById(playerId1);
         Player gamePlayer2 = findById(playerId2);
 
